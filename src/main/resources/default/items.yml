@@ -1,0 +1,140 @@
+
+# Vanilla Slots
+HELMET:
+    type: helmet
+    material: DIAMOND_HOE
+    durability: 1
+    name: '&6Helmet Slot'
+    slot: 4
+    lore:
+    - Drag & drop an item to equip it.
+CHESTPLATE:
+    type: chestplate
+    material: DIAMOND_HOE
+    durability: 2
+    name: '&6Chestplate Slot'
+    slot: 13
+    lore:
+    - Drag & drop an item to equip it.
+LEGGINGS:
+    type: leggings
+    material: DIAMOND_HOE
+    durability: 3
+    name: '&6Leggings Slot'
+    slot: 22
+    lore:
+    - Drag & drop an item to equip it.
+BOOTS:
+    type: boots
+    material: DIAMOND_HOE
+    durability: 4
+    name: '&6Boots Slot'
+    slot: 31
+    lore:
+    - Drag & drop an item to equip it.
+OFF_HAND:
+    type: off_hand
+    material: DIAMOND_HOE
+    durability: 14
+    name: '&6Off Hand Slot'
+    slot: 12
+    lore:
+    - Drag & drop an item to equip it.
+
+# Ring slots
+RIGHT_RING:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 7
+    name: '&6Right Ring Slot'
+    slot: 25
+    restrictions:
+    - 'mmoitemstype{type=RING}'
+    lore:
+    - Drag & drop an item to equip it.
+LEFT_RING:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 8
+    name: '&6Left Ring Slot'
+    slot: 34
+    restrictions:
+    - 'mmoitemstype{type=RING}'
+    lore:
+    - Drag & drop an item to equip it.
+
+# Extra accessories
+AMULET:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 5
+    name: '&6Amulet Slot'
+    slot: 7
+    restrictions:
+    - 'mmoitemstype{type=AMULET}'
+    lore:
+    - Drag & drop an item to equip it.
+BRACELET:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 6
+    name: '&6Bracelet Slot'
+    slot: 16
+    restrictions:
+    - 'mmoitemstype{type=BRACELET}'
+    lore:
+    - Drag & drop an item to equip it.
+GLOVES:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 9
+    name: '&6Gloves Slot'
+    slot: 1
+    restrictions:
+    - 'mmoitemstype{type=GLOVES}'
+    lore:
+    - Drag & drop an item to equip it.
+
+# Artifact slots
+ARTIFACT_1:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 10
+    name: '&6Artifact Slot I'
+    slot: 10
+    restrictions:
+    - 'mmoitemstype{type=ARTIFACT}'
+    - 'unique{enabled=true}'
+    lore:
+    - Drag & drop an item to equip it.
+ARTIFACT_2:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 11
+    name: '&6Artifact Slot II'
+    slot: 19
+    restrictions:
+    - 'mmoitemstype{type=ARTIFACT}'
+    - 'unique{enabled=true}'
+    lore:
+    - Drag & drop an item to equip it.
+ARTIFACT_3:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 12
+    name: '&6Artifact Slot III'
+    slot: 28
+    restrictions:
+    - 'mmoitemstype{type=ARTIFACT}'
+    - 'unique{enabled=true}'
+    lore:
+    - Drag & drop an item to equip it.
+
+# Misc
+FILL:
+    type: fill
+    material: DIAMOND_HOE
+    durability: 15
+    name: '&a'
+    slot: -1
+    lore: []

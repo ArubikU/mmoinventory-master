@@ -1,0 +1,21 @@
+name: RPGInventory
+version: ${project.version}
+main: net.Indyuce.inventory.MMOInventory
+author: Indyuce
+description: ${project.description}
+softdepend: [MythicLib,MMOItems,MCCosmetics,InvSee++]
+api-version: 1.13
+commands:
+    mmoinventory:
+        description: Opens the custom inventory.
+        aliases: [rpginventory,mmoinv,rpginv,profile]
+permissions:
+    mmoinventory.open:
+        description: Allows to open your own inventory using a command.
+        default: op
+    mmoinventory.open.other:
+        description: Allows to open another player's inventory.
+        default: op
+    mmoinventory.admin:
+        description: Allows to use admin commands.
+        default: op

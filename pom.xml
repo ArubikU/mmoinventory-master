@@ -1,0 +1,267 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>net.Indyuce</groupId>
+    <artifactId>mmoinventory</artifactId>
+    <version>1.6.6</version>
+    <name>MMOInventory</name>
+    <description>A simple RPG custom inventory solution</description>
+
+    <build>
+        <finalName>${project.name}-${project.version}</finalName>
+        <resources>
+            <resource>
+                <filtering>true</filtering>
+                <directory>${basedir}/src/main/resources/</directory>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>auto-clean</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            
+        </plugins>
+    </build>
+
+    <repositories>
+
+        <repository>
+            <id>codemc-releases</id>
+            <url>https://repo.codemc.org/repository/maven-releases/</url>
+        </repository>
+
+        <repository>
+            <id>phoenix</id>
+            <url>https://nexus.phoenixdvpt.fr/repository/maven-public/</url>
+        </repository>
+
+
+        <repository>
+            <id>lumine-repo</id>
+            <url>https://mvn.lumine.io/repository/maven-public/</url>
+        </repository>
+        <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
+        </repository>
+        <repository>
+            <id>spigot-snapshots</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>papermc</id>
+            <url>https://papermc.io/repo/repository/maven-public/</url>
+        </repository>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+
+
+    </repositories>
+
+    <dependencies>
+        <!-- SkinsRestorer API -->
+        <dependency>
+            <groupId>net.skinsrestorer</groupId>
+            <artifactId>skinsrestorer-api</artifactId>
+            <version>14.2.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-clean-plugin -->
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-clean-plugin</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+
+        <!-- Spigot base API, MMOInv is natively built for 1.17 ie latest version -->
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.18.1-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- NMS code -->
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-1.17.1</artifactId>
+            <version>dev</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Soft Dependencies --> 
+       <dependency>
+            <groupId>net.Indyuce</groupId>
+            <artifactId>MMOItems-API</artifactId>
+            <version>6.8.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>net.Indyuce</groupId>
+            <artifactId>MMOCore-API</artifactId>
+            <version>1.10.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>io.lumine</groupId>
+            <artifactId>MythicLib-dist</artifactId> 
+            <version>1.4.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>io.lumine</groupId>
+            <artifactId>MCCosmetics</artifactId>
+            <version>0.6.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+        <groupId>io.lumine</groupId>
+        <artifactId>MCCosmetics-Dist</artifactId>
+        <version>0.6.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.lumine</groupId>
+            <artifactId>MCCosmetics-API</artifactId>
+            <version>0.6.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>io.lumine</groupId>
+            <artifactId>LumineUtils</artifactId>
+            <version>1.18-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.zthana</groupId>
+            <artifactId>LoreAttributes</artifactId>
+            <version>5.0.5</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>net.Indyuce</groupId>
+            <artifactId>MMOCore</artifactId>
+            <version>1.9.2</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.herocraftonline</groupId>
+            <artifactId>heroes</artifactId>
+            <version>1.9.3</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.gmail.nossr50</groupId>
+            <artifactId>mcMMO</artifactId>
+            <version>2.1.104</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>us.eunoians</groupId>
+            <artifactId>McRPG</artifactId>
+            <version>1.1.2</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>me.baks</groupId>
+            <artifactId>rpl</artifactId>
+            <version>3.9.30</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>me.leothepro555</groupId>
+            <artifactId>skills</artifactId>
+            <version>12.3.5</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.skills.main</groupId>
+            <artifactId>SkillsPro</artifactId>
+            <version>18.9.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>me.robin</groupId>
+            <artifactId>BattleLevels</artifactId>
+            <version>6.9.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.Eniripsa96</groupId>
+            <artifactId>SkillAPI</artifactId>
+            <version>master</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>de.tobiyas</groupId>
+            <artifactId>RacesAndClasses</artifactId>
+            <version>1.2.6</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>me.clip</groupId>
+            <artifactId>PlaceholderAPI</artifactId>
+            <version>2.11.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.th0rgal</groupId>
+            <artifactId>Oraxen</artifactId>
+            <version>1.127.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.archyx</groupId>
+            <artifactId>AureliumSkills</artifactId>
+            <version>1.0.6</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+</project>
